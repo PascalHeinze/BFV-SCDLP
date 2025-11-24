@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Website</title>
+
+    <!-- BFV Widget Include -->
+    <script type="text/javascript" src="https://widget-prod.bfv.de/widget/widgetresource/widgetjs"></script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,16 +41,29 @@
     </header>
 
     <div class="content">
-        <h2>Einfacher Inhalt</h2>
-        <p>Diese Seite wurde als Beispiel für GitHub Pages erstellt.</p>
+        <h2>Ergebnisse & Tabelle</h2>
+        <p>BFV-Widget eingebunden:</p>
 
         <div class="widget-box">
-            <h3>Mein Widget</h3>
-            <!-- Hier kannst du dein Widget einbinden -->
-            <!-- Beispiel für ein iframe-Widget -->
-            <!--
-            <iframe src="https://dein-widget.de" width="100%" height="300"></iframe>
-            -->
+
+            <!-- BFV Widget Container + Script -->
+            <div id="bfv1763985590529">Laden...</div>
+            <script>
+                BFWidget.HTML5.zeigeWettbewerb(
+                    "02T3OKULS8000004VS5489BTVS0H8J6BG",
+                    "bfv1763985590529",
+                    {
+                        height: "700",
+                        width: "350",
+                        selectedTab: BFWidget.HTML5.wettbewerbTabs.ergebnisse,
+                        colorResults: "undefined",
+                        colorNav: "undefined",
+                        colorClubName: "undefined",
+                        backgroundNav: "undefined"
+                    }
+                );
+            </script>
+
         </div>
     </div>
 </body>
